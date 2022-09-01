@@ -1,0 +1,21 @@
+h1{
+  font-size: 50px;
+}
+
+h2{
+  background-color: aqua;
+  font-size: 20px;
+}
+
+h2#cabecalho-22{
+  background-color: blueviolet;
+}
+
+/*1° item das listas ordenada e não ordenada*/
+li#ul-li-1, li#ol-li-1{
+  background-color: green;
+}
+
+li.fundo-laranja{
+  background-color: orange;
+}
