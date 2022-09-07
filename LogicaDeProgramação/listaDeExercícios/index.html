@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ex1() {
+        let n1 = 3
+        let n2 = 2
+        let a
+        let b
+        let total = 0
+        a = n1 / n2
+        b = a
+        n1 = n2 + 10
+        n2 = n1 % 2
+        b = b * 2
+        a++
+        a += 1
+        b = b
+        total = n1 + n2
+        b = a + total
+        a = total + (2 % 2)
+        b = (2 + 3) * n1
+        b = n1 - total - n2
+        total = b + a
+        console.log(`a=${a}, b=${b}`)
+      }
+
+      function ex2(a, b, c) {
+        console.log(a + b + c)
+      }
+
+      function ex3(n) {
+        console.log(`${n - 1}, ${n + 1}`)
+      }
+
+      function ex4(K) {
+        C = K - 273.15
+        console.log(C)
+      }
+
+      function ex5(a, m, d) {
+        let idadeEmDias = a * 365 + m * 30 + d
+        console.log(`A idade da pessoa em dias é ${idadeEmDias}`)
+      }
+
+      function ex6(n) {
+        console.log(n ** 2)
+      }
+
+      function ex7(a1, a2, a3, premio) {
+        total = a1 + a2 + a3
+        console.log(
+          `${(premio / total) * a1},${(premio / total) * a2},${
+            (premio / total) * a3
+          }`
+        )
+      }
+
+      function ex8() {
+        let a = 4
+        let n1 = 0
+        let n2 = 3
+        n1 = n2 > 5 == n2 <= 3
+        n2 = ((a % 4) * 3) / 2 + 15 - 1 * n1 != 3 * 5
+        a = a * 2
+        a /= 8
+        console.log(`n1=${n1},n2=${n2},a=${a}`)
+      }
+
+      function ex9(senha) {
+        if (senha == 904087) {
+          console.log('Acesso permitido')
+        } else {
+          console.log('Você não tem acesso ao sistema')
+        }
+      }
+
+      function executaExercícios() {
+        ex1(),
+          ex2(1, 2, 3),
+          ex3(10),
+          ex4(300),
+          ex5(12, 5, 3),
+          ex6(10),
+          ex7(10, 40, 50, 10000),
+          ex8(),
+          ex9(904087)
+      }
+      executaExercícios()
+    </script>
+  </body>
+</html>
