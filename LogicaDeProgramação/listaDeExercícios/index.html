@@ -81,6 +81,34 @@
         }
       }
 
+      function ex10(total) {
+        let horas = Math.floor(total / 3600)
+        total -= horas * 3600
+        let minutos = Math.floor(total / 60)
+        total -= minutos * 60
+        let segundos = total
+        console.log(
+          `${horas} hora(s),${minutos} minuto(s),${segundos} segundo(s)`
+        )
+      }
+
+      function ex11(n1, n2) {
+        if (n1 > n2) {
+          console.log(n1)
+        } else {
+          console.log(n2)
+        }
+      }
+
+      function ex12(P1, P2, T1, T2) {
+        let media = (P1 * 0.7 + T1 * 0.3 + P2 * 0.7 + T2 * 0.3) / 2
+        if (media >= 6) {
+          console.log('Aprovado')
+        } else {
+          console.log('Reprovado')
+        }
+      }
+
       function executaExercícios() {
         ex1(),
           ex2(1, 2, 3),
@@ -90,7 +118,10 @@
           ex6(10),
           ex7(10, 40, 50, 10000),
           ex8(),
-          ex9(904087)
+          ex9(904087),
+          ex10(10000),
+          ex11(10, 20),
+          ex12(6, 6, 6, 6)
       }
       executaExercícios()
     </script>
