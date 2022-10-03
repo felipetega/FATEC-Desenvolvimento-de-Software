@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ex2(x) {
+        if (x >= 100) {
+          console.log(' “Número maior ou igual a 100')
+        } else {
+          console.log('Número menor que 100')
+        }
+      }
+
+      function ex3(latao) {
+        let cobre = latao * 0.7
+        let zinco = latao * 0.3
+        console.log(cobre, zinco)
+      }
+
+      function ex4(n) {
+        if (n % 2 == 0) {
+          console.log('Par')
+        } else {
+          console.log('Impar')
+        }
+      }
+
+      function ex5(idade) {
+        if (idade <= 4) {
+          console.log('Não compete')
+        } else if (idade >= 5 && idade <= 7) {
+          console.log('Infantil A')
+        } else if (idade >= 8 && idade <= 11) {
+          console.log('Infantil B')
+        } else if (idade >= 12 && idade <= 13) {
+          console.log('Juvenil A')
+        } else if (idade >= 14 && idade <= 17) {
+          console.log('Juvenil B')
+        } else {
+          console.log('Adulto')
+        }
+      }
+
+      function ex6(peso) {
+        let multa = (peso - 50) * 4
+        let excesso = peso - 50
+        console.log(multa, excesso)
+      }
+
+      function ex7(saque, senha) {
+        let saldo = 1000
+        if (senha == 123456) {
+          if (saque <= saldo) {
+            console.log('Aprovado', saldo - saque)
+          }
+        }
+      }
+
+      function ex8(a, b, c) {
+        let primeiro, segundo, terceiro
+        if ((a > b && a < c) || (a > c && a < b)) {
+          segundo = a
+        } else if ((b > a && b < c) || (b > c && b < a)) {
+          segundo = b
+        } else if ((c > a && c < b) || (c > b && c < a)) {
+          segundo = b
+        }
+      }
+
+      function ex82(a, b, c) {
+        let arr = [a, b, c]
+        a = arr.sort()
+        console.log(a)
+      }
+
+      function executaExercícios() {
+        ex2(100),
+          ex3(10),
+          ex4(10),
+          ex5(3),
+          ex6(100),
+          ex7(333, 123456),
+          ex82(10, 20, 3)
+      }
+      executaExercícios()
+    </script>
+  </body>
+</html>
