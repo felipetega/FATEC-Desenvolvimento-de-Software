@@ -68,14 +68,25 @@
         } else if ((b > a && b < c) || (b > c && b < a)) {
           segundo = b
         } else if ((c > a && c < b) || (c > b && c < a)) {
-          segundo = b
+          segundo = c
         }
-      }
-
-      function ex82(a, b, c) {
-        let arr = [a, b, c]
-        a = arr.sort()
-        console.log(a)
+        if (a > segundo) {
+          primeiro = a
+        } else if (b > segundo) {
+          primeiro = b
+        } else if (c > segundo) {
+          primeiro = c
+        }
+        if (a < segundo) {
+          terceiro = a
+        } else if (b < segundo) {
+          terceiro = b
+        } else if (c < segundo) {
+          terceiro = c
+        }
+        console.log(
+          `O primeiro é ${primeiro}, o segundo é ${segundo} e o terceiro é ${terceiro}`
+        )
       }
 
       function ex9(letra) {
@@ -116,7 +127,7 @@
           ex5(3),
           ex6(100),
           ex7(333, 123456),
-          ex82(10, 20, 3),
+          ex8(10, 20, 3),
           ex9('A'),
           ex10(20, 1)
       }
