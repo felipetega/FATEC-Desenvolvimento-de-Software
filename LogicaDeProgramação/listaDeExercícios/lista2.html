@@ -78,6 +78,37 @@
         console.log(a)
       }
 
+      function ex9(letra) {
+        vogais = ['a', 'e', 'i', 'o', 'u']
+        if (
+          typeof letra === 'string' &&
+          letra.length === 1 &&
+          vogais.indexOf(letra.toLowerCase()) !== -1
+        ) {
+          console.log('É vogal')
+        } else {
+          console.log('Não é vogal')
+        }
+      }
+
+      function ex10(litros, combustivel) {
+        let preço
+        if (combustivel == 1) {
+          if (litros <= 20) {
+            preço = (2.7 * litros) / 1.02
+          } else {
+            preço = (2.7 * 20) / 1.02 + (litros - 20) / 1.05
+          }
+        } else if (combustivel == 2) {
+          if (litros <= 20) {
+            preço = (4.1 * litros) / 1.03
+          } else {
+            preço = (4.1 * 20) / 1.03 + (litros - 20) / 1.05
+          }
+        }
+        console.log(preço)
+      }
+
       function executaExercícios() {
         ex2(100),
           ex3(10),
@@ -85,7 +116,9 @@
           ex5(3),
           ex6(100),
           ex7(333, 123456),
-          ex82(10, 20, 3)
+          ex82(10, 20, 3),
+          ex9('A'),
+          ex10(20, 1)
       }
       executaExercícios()
     </script>
