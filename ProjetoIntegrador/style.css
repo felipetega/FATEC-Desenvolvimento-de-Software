@@ -1,9 +1,64 @@
+body{
+  background-color: gray;
+}
+main{
+  margin: 0 20%;
+}
 aside{
   float: left;
+  background-color: red;
+  width: 25%;
+  height: 400px;
+}
+aside nav ul li{
+  list-style: none;
+  font-size: 50px;
+}
+/*TELA 4*/
+#fotoPerfil img{
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
 #usuarioCNPJ{
   float: left;
+  background-color: blue;
+  width: 75%;
+  height: 250px;
 }
 #caracteristicasProduto{
-  clear: both;
+  float: left;
+}
+/*TELA 8*/
+#formaDePagamento{
+  float: left;
+  margin: 0 40px 40px 0;
+  width: 25%;
+  background-color: aquamarine;
+}
+#carrinho{
+  background-color: royalblue;
+  width: 70%;
+  float: left;
+}
+.produto{
+  float: left;
+}
+.produto div img{
+  width: 150px;
+  height: 100px;
+  float: left;
+}
+.produto div{
+  float: left;
+}
+.produto div{
+  margin: 0 40px;
+}
+#finalizar{
+  float: left;
+  margin-top: 40px;
+}
+#finalizar div{
+  float: left;
 }
