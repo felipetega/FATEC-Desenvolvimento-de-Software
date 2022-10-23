@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+</head>
+<body>
+    <div id="fundo-vermelho">
+        <div id="div-header" class="fundo-branco">
+            <header>
+                <p>TOPO</p>
+            </header>
+        </div>
+        <div id="div-nav" class="fundo-nav">
+            <nav>
+                <ul id="nav-geral">
+                    <li><a href="/1.html">Home</a></li>
+                    <li><a href="/2.html">Principais Notícias</a></li>
+                    <li><a href="/3.html">Montagem e Manutenção</a></li>
+                    <li><a href="/4.html">Suporte e Administração de Redes</a></li>
+                    <li><a href="/5.html">Desenvolvimento de Sistemas</a></li>
+                    <li><a href="/6.html">Desenvolvimento de Websites</a></li>
+                    <li><a href="/7.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="div-main" class="fundo-branco">
+            <main id="main-7">
+                <h1>MOTU Systems</h1>
+                <p>MOTU - (11) 1234-4567</p>
+                <div id="dados-pessoais">
+                    <form action="#">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" class="fundo"><br><br>
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email" id="email" class="fundo" size="35"><br><br>
+                        </fieldset>
+                    </form>
+                </div>
+        
+                <div id="dados-solicitaçao">
+                    <fieldset>
+                        <legend>Dados da Solicitação</legend>
+                        <label for="assunto" class="geral">Assunto:</label>
+                        <select name="assunto" id="assunto" class="fundo">
+                            <option value="Selecione">Selecione</option>
+                        </select><br> <br>
+                        <label for="descricao" class="geral">Descrição </label><br>
+                        <input type="text" name="descricao" id="descricao" class="fundo" style="margin: 4px 0px 10px 20px;"><br>
+                        <input type="checkbox" name="receberEmail" id="receberEmail" class="geral">
+                        <label for="receberEmail">Desejo receber informações do site por e-mail</label>
+                    </fieldset>
+                </div>
+        
+                <input type="button" value="Enviar" class="botao-7">
+                <input type="button" value="Limpar">
+            </main>
+        </div>
+        <div id="div-footer" class="fundo-branco">
+            <footer>
+                <p id="footer-p">₢ 2013 - Desenvolvido por <span id="red-footer">MOTU Systems</span></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
