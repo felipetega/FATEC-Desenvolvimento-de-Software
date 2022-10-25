@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ex1(raio) {
+        console.log(3.14 * raio ** 2)
+      }
+      function ex2(n) {
+        if (n % 3 == 0 && n % 5 == 0) {
+          console.log('Divisível por 3 e 5')
+        } else {
+          console.log('Não é divisível por 3 ou/e 5')
+        }
+      }
+      function ex3(sexo, altura) {
+        if (sexo.toLowerCase() == 'm') {
+          console.log(altura ** 2 * 23)
+        } else {
+          console.log(altura ** 2 * 22)
+        }
+      }
+      function ex4(idade) {
+        if (idade >= 0 && idade <= 17) {
+          console.log(`Faltam ${18 - idade} anos para seus 18 a maioridade`)
+        } else {
+          console.log(`Você é maior de idade há ${idade - 18} anos`)
+        }
+      }
+      function ex5(vi, a, t) {
+        console.log(vi + a * t)
+      }
+      function ex6(a, b, c, d) {
+        aQuadrado = a ** 2
+        bQuadrado = b ** 2
+        cQuadrado = c ** 2
+        dQuadrado = d ** 2
+        if (cQuadrado >= 100) {
+          console.log(cQuadrado)
+        } else {
+          console.log(a, aQuadrado, b, bQuadrado, c, cQuadrado, d, dQuadrado)
+        }
+      }
+      function ex7(voto) {
+        if (voto == 1 || voto == 2 || voto == 3 || voto == 4) {
+          console.log('Voto contabilizado com sucesso...')
+        } else if (voto == 5) {
+          console.log('Voto nulo contabilizado...')
+        } else {
+          console.log('Voto branco contabilizado...')
+        }
+      }
+      function ex8(pL, kmL, dist) {
+        let litros = dist / kmL
+        let preco = dist / (kmL / pL)
+        console.log(`Foram gastos ${litros} litros e ${preco} reais`)
+      }
+      function ex9(n1, n2, n3, n4, n5) {
+        let arr = [n1, n2, n3, n4, n5]
+        console.log(Math.max(...arr))
+      }
+      function ex10() {}
+      function ex11() {}
+      function ex12() {}
+      function ex13() {}
+      function ex14() {}
+      function ex15() {}
+      function ex16() {}
+
+      function executaExercícios() {
+        ex1(10),
+          ex2(15),
+          ex3('m', 180),
+          ex4(21),
+          ex5(60, 2, 10),
+          ex6(2, 3, 4, 5),
+          ex7(1),
+          ex8(5, 20, 100),
+          ex9(1, 2, 7, 3, 4),
+          ex10(),
+          ex11(),
+          ex12(),
+          ex13(),
+          ex14(),
+          ex15(),
+          ex16()
+      }
+      executaExercícios()
+    </script>
+  </body>
+</html>
