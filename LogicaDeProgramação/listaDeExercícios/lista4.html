@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var contadorHoras=0
+        function ex15(horaInicial, minutoInicial, horaFinal, minutoFinal){
+            for(horaInicial; horaInicial!=horaFinal; horaInicial++){
+                contadorHoras+=1
+                if(horaInicial==24){
+                    horaInicial=0
+                }
+            }
+            console.log(contadorHoras)
+        }
+        ex15(15,0,1,0)
+    </script>
+    
+</body>
+</html>
