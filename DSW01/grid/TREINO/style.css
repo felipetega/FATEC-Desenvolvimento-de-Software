@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+}
+.container{
+  background-color: blueviolet;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  background-color: gray;
+  width: 200px;
+  height: auto;
+}

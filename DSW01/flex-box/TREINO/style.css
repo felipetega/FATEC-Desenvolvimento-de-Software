@@ -1,0 +1,17 @@
+body{
+  background-color: black;
+}
+.container{
+  background-color: blueviolet;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box{
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}

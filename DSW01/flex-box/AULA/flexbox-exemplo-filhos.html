@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Exemplo Filhos</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilo-exemplo-filhos.css">
+        <link rel="icon" type="image/png" href="img/flexbox-icon.webp">
+    </head>
+
+    <body>
+        <div id="layout">
+            <h2>Order</h2>
+            <p>Use a propriedade order para classificar os itens flexíveis como desejar:</p>
+
+            <div class="flex-container">
+                <div style="order: 1">1</div>
+                <div style="order: 2">2</div>
+                <div style="order: 4">3</div> 
+                <div style="order: 3">4</div>
+            </div>
+
+            <h2>Flex-grow</h2>
+            <p>A propriedade Flex-grow especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis.</p>
+
+            <div class="flex-container">
+                <div style="flex-grow: 1">1</div>
+                <div style="flex-grow: 1">2</div>
+                <div style="flex-grow: 8">3</div>
+            </div>
+
+            <h2>Flex-shrink</h2>
+            <p>A propriedade Flex-shrink especifica quanto um item flexível diminuirá em relação ao restante dos itens flexíveis.</p>
+
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-shrink: 0">3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+
+            <h2>Flex-basis</h2>
+            <p>A propriedade Flex-basis especifica o comprimento inicial de um item flexível.</p>
+
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-basis:200px">3</div>
+                <div style="flex-grow: 8;">4</div>
+            </div>
+        
+            <h2>Flex</h2>
+            <p>Flex é uma propriedade abreviada para as propriedades flex-grow, flex-shrinke flex-basis.</p>
+
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div style="flex: 0 0 200px">4</div>
+            </div>
+
+            <h2>Align-self</h2>
+            <p>A propriedade Align-self especifica o alinhamento do item selecionado dentro do contêiner flexível.
+                Ela substitui o alinhamento padrão definido pela align-itemspropriedade do contêiner.</p>
+
+            <div id="Aself" class="flex-container">
+                <div style="align-self: center">1</div>
+                <div style="align-self: flex-start">2</div>
+                <div style="align-self: flex-end">3</div>
+                <div>4</div>
+            </div>
+        </div>      
+    </body>
+</html>

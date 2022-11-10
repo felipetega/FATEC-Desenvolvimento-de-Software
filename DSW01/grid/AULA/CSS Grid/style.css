@@ -1,0 +1,219 @@
+/*FORMA 1*/
+body{
+    padding: 0;
+    margin: 0;
+}
+.container1{
+    display: grid;
+    grid-template-columns: auto; /*Propriedade usada para definir o tamanho da coluna*/
+    grid-template-rows: auto; /*Propriedade usada para definir o tamanho da linha*/
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    gap: 2,5px; /*Define a distancia entre as colunas e linhas*/
+}
+.header{
+    background-color: blue;
+    grid-column-start: 1; /*Define em qual coluna começa*/
+    grid-column-end: 10; /*Define em qual coluna termina*/
+    grid-row-start: 1; /*Define em qual linha começa*/
+    grid-row-end: 1; /*Define em qual linha termina*/
+}
+.main{
+    background-color: chartreuse;
+    grid-column-start: 2; /*Define em qual coluna começa*/
+    grid-column-end: 10; /*Define em qual coluna termina*/
+    grid-row-start: 2; /*Define em qual linha começa*/
+    grid-row-end: 8; /*Define em qual linha termina*/
+}
+.sidebar{
+    background-color:crimson;
+   grid-column-start: 1; /*Define em qual coluna começa*/
+    grid-column-end: 1; /*Define em qual coluna termina*/
+    grid-row-start: 2; /*Define em qual linha começa*/
+    grid-row-end: 8; /*Define em qual linha termina*/
+}
+.footer{
+    background-color:darkslategrey;
+    grid-column-start: 1; /*Define em qual coluna começa*/
+    grid-column-end: 10; /*Define em qual coluna termina*/
+    grid-row-start: 8; /*Define em qual linha começa*/
+    grid-row-end: 8; /*Define em qual linha termina*/
+}
+
+.container1 > div{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+/*FORMA 2*/
+
+.container2{
+    display: grid; 
+    grid-template-areas:"header2 header2 header2 header2" /*Layout é desenhado atraves das referencias nomeadas em cada div*/
+    "navbar2 main2 main2 main2"
+    "footer2 footer2 footer2 footer2 " ;
+    background-color: rgb(129, 0, 250);
+    height: 100vh;
+    width: 100vw;
+    gap: 2,5px; /*Define a distancia entre as colunas e linhas*/
+}
+
+.HEADER2{
+    background-color: rgb(255, 7, 7);
+    grid-area: header2; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+}
+
+.MAIN2{
+    background-color: rgb(47, 255, 0);
+    grid-area: main2; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+}
+
+.SIDEBAR2{
+    background-color: rgb(0, 255, 242);
+    grid-area: navbar2;/*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+}
+.FOOTER2{
+    background-color: rgb(255, 255, 255);
+    grid-area: footer2; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+}
+.container2 > div{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+/*FORMA 3*/
+
+.container3{
+    display: grid;
+    grid-template-columns: auto; /*Propriedade usada para definir o tamanho da coluna*/
+    grid-template-rows: auto; /*Propriedade usada para definir o tamanho da linha*/
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    gap:2,5px; /*Define a distancia entre as colunas e linhas*/
+}
+
+.header3{
+    background-color: chartreuse;
+    grid-area: 1/1/1/span 4; /*Linha inicial / coluna inicial / linha final / coluna final*/
+}
+.navbar3{
+    background-color: rgb(255, 221, 0);
+    grid-area: 2 / 1 /4 / 1; /*Linha inicial / coluna inicial / linha final / coluna final*/
+}
+.main3{
+    background-color: rgb(255, 106, 0);
+    grid-area: 2 / 2 / 4 /span 3; /*Linha inicial / coluna inicial / linha final / coluna final*/
+}
+.footer3{
+    background-color: rgb(255, 0, 0);
+    grid-area: 4 / span 4; /*Linha inicial / coluna inicial / linha final / coluna final*/
+}
+.container3 > div{
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Forma 4*/
+.container4{
+    display: grid;
+    grid-template-columns: auto; /*Propriedade usada para definir o tamanho da coluna*/
+    grid-template-rows: auto; /*Propriedade usada para definir o tamanho da linha*/
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+    gap: 2,5px; /*Define a distancia entre as colunas e linhas*/
+}
+.coluna1{
+    grid-column-start: 1; /*Define em qual coluna começa*/
+    grid-column-end: 2; /*Define em qual coluna termina*/
+    grid-row-start: 1; /*Define em qual linha começa*/
+    grid-row-end: 1; /*Define em qual linha termina*/
+    background-color: rgb(0, 255, 255);
+}
+.coluna2{
+    grid-column-start: 2; /*Define em qual coluna começa*/
+    grid-column-end: 3; /*Define em qual coluna termina*/
+    grid-row-start: 1; /*Define em qual linha começa*/
+    grid-row-end: 1; /*Define em qual linha termina*/
+    background-color: rgb(6, 255, 48);
+}
+.coluna3{
+    grid-column-start: 3; /*Define em qual coluna começa*/
+    grid-column-end: 4; /*Define em qual coluna termina*/
+    grid-row-start: 1; /*Define em qual linha começa*/
+    grid-row-end: 1; /*Define em qual linha termina*/
+    background-color: rgb(6, 43, 255);
+}
+.container4 > div{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+
+
+/*Forma 5*/
+.container5{
+    display: grid; 
+    grid-template-areas:"colum1 colum2 colum3"; /*Layout é desenhado atraves das referencias nomeadas em cada div*/
+    background-color: rgb(129, 0, 250);
+    height: 100vh;
+    width: 100vw;
+    gap: 2,5pxpx; /*Define a distancia entre as colunas e linhas*/
+}
+.colum1{
+    grid-area: colum1; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+    background-color: brown;
+}
+.colum2{
+    grid-area: colum2; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+    background-color: rgb(103, 250, 4);
+}
+.colum3{
+    grid-area: colum3; /*A area é nomeada usando o grid-area para ser referenciada e desenhada atravez do grid-template-areas*/
+    background-color: rgb(253, 0, 148);
+}
+.container5 > div{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+
+
+/*Forma 6*/
+
+.container6{
+    display: grid;
+    grid-template-columns: auto; /*Propriedade usada para definir o tamanho da coluna*/
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    gap: 2,5px; /*Define a distancia entre as colunas e linhas*/
+}
+
+.col1{
+    background-color: chartreuse;
+    grid-area: 1/ 1 / 1 / 1; /*Pode ser lido como linha inicial / coluna inicial / linha final / coluna final*/
+}
+.col2{
+    background-color: rgb(255, 221, 0);
+    grid-area: 1 / 2 / 1 / 2; /*Pode ser lido como linha inicial / coluna inicial / linha final / coluna final*/
+}
+.col3{
+    background-color: rgb(255, 106, 0);
+    grid-area: 1 / 3 / 1 / 3; /*Pode ser lido como linha inicial / coluna inicial / linha final / coluna final*/
+}
+.container6 > div{
+    text-align: center;
+    margin: 5px;
+}
