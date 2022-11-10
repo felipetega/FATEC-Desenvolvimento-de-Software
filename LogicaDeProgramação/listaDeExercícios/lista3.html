@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <script>
@@ -108,7 +109,23 @@
       pagamento será realizado em ${parcelas} parcelas`)
         }
       }
-      function ex15() {}
+      function ex15(horaInicial, minutoInicial, horaFinal, minutoFinal){
+            var contadorHoras=0
+            var contadorMinutos=0
+            for(horaInicial; horaInicial!=horaFinal; horaInicial++){
+                contadorHoras+=1
+                if(horaInicial==24){
+                    horaInicial=0
+                }
+            }
+            for(minutoInicial; minutoInicial!=minutoFinal; minutoInicial++){
+                contadorMinutos+=1
+                if(minutoInicial==60){
+                    minutoInicial=0
+                }
+            }
+            console.log(contadorHoras, contadorMinutos)
+        }
       function ex16() {
         let A = 2
         let B = 3
@@ -147,7 +164,7 @@
           ex12(10, 9, 8, 20),
           ex13(20),
           ex14(1001, 10),
-          ex15(),
+          ex15(15,45,1,15),
           ex16()
       }
       executaExercícios()
