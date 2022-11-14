@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header configuracao">
+            <header>
+                <img src="/img/logo-sem-fundo.png" alt="Logo da empresa">
+                <a href="tela7.html">Voltar</a>
+            </header>
+        </div>
+        <div class="main configuracao">
+            <main>
+                <div class="profile-picture">
+                    <input type="file" name="fotoperfil" id="fotoperfil">
+                </div>
+                <form action="#">
+                    <fieldset>
+                        <legend>Configuração de conta</legend>
+                        <br><br>
+                        <label for="cep">CEP:</label>
+                                <input type="number" name="cep" id="cep" min="8" max="8" placeholder="Ex: 99-999-999" size="20"><br>
+                            <label for="bairro">Bairro:</label> 
+                                <input type="text" placeholder="Ex: Cardim II" id="bairro" size="20"> <br>
+                            <label for="Rua">Rua:</label> 
+                                <input type="text" placeholder="Ex: Joaquin Pedroso" id="Rua" size="20"> <br>
+                            <label for="numerocasa">Nº:</label>
+                                <input type="number" name="numero" id="numerocasa" placeholder="Ex: 123" size="20"><br>
+                            <label for="estado">Estado</label>
+                                <select name="estado" id="estado">
+                                    <option value="Estado" selected>Selecione</option>
+                                    <!--<option value="AC">Acre</option>
+                                    <option value="Al">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BH">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>-->
+                                    <option value="SP">São Paulo</option>
+                                    <!--<option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>-->
+                                </select> <br>
+                            <label for="Cidade">Cidade</label>
+                                <select name="Cidade" id="Cidade">
+                                    <option value="Selecione" selected>Selecione</option>
+                                    <option value="Araraquara">Araraquara</option>
+                                    <option value="Campinas">Campians</option>
+                                    <option value="Matão">Matão</option>
+                                    <option value="Ribeirão Preto">Ribeirão Preto</option>
+                                    <option value="São Carlos">São Carlos</option>
+                                </select> <br><br>
+                            <button type="submit">Salvar</button>
+                            <button type="reset">Limpar</button>
+                    </fieldset>
+                    <div id="campo-cartão">
+                        <fieldset>
+                            <legend>Cadastrar Cartão</legend>
+                            <label for="nomecartao"> Nome do cartão:</label> <br>
+                            <input type="text" name="nomecartao" id="nomecartao" placeholder="Ex: Fernando Tiosso"> <br>
+                            <label for="nomecartao"> Numero do cartão:</label> <br>
+                            <input type="number" name="numerocartao" id="numerocartao" placeholder="XXXX - XXXX - XXXX - XXXX"> <br>
+                            <label for="nomecartao"> Numero de Segurança:</label> <br>
+                            <input type="number" name="numeroseguranca" id="numeroseguranca" placeholder="XXX"> <br>
+                            <label for="nomecartao"> Data de expiração:</label><br>
+                            <select name='mesexpiração' id='mesexpiração'>
+                                <option value='01'>Janeiro</option>
+                                <option value='02'>Fevereiro</option>
+                                <option value='03'>Março</option>
+                                <option value='04'>Abril</option>
+                                <option value='05'>Maio</option>
+                                <option value='06'>Junho</option>
+                                <option value='07'>Julho</option>
+                                <option value='08'>Agosto</option>
+                                <option value='09'>Setembro</option>
+                                <option value='10'>Outubro</option>
+                                <option value='11'>Novembro</option>
+                                <option value='12'>Dezembro</option>
+                            </select> 
+                            <select name='anoexpiração' id='anoexpiração'>
+                                <option value='20'>2020</option>
+                                <option value='21'>2021</option>
+                                <option value='22'>2022</option>
+                                <option value='23'>2023</option>
+                                <option value='24'>2024</option>
+                            </select> <br>
+                            <button type="submit">Salvar</button>
+                            <button type="reset">Limpar</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <div class="footer configuracao">
+            <footer>RangoTop&copy;</footer>
+        </div>
+    </div>
+</body>
+</html>

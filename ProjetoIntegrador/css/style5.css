@@ -1,0 +1,62 @@
+body{
+    background: rgb(251,194,2);
+    background: linear-gradient(180deg, rgba(251,194,2,0.3477591720281863) 0%, rgba(250,79,0,0.5214286398153012) 100%); 
+    text-align: center;
+}
+
+.header{
+    border-bottom: 1px solid rgba(250, 250, 250, 0.616);
+}
+
+.configuracao fieldset{
+    border: 1px solid black;
+    border-radius: 1%;
+    width: 500px;
+}
+
+.container main{
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    ;
+}
+
+.header{
+    grid-area: header;
+    justify-content: start;
+    align-content: start;
+    
+}
+
+.main{
+    grid-area: main;
+}
+
+.profile-picture{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
