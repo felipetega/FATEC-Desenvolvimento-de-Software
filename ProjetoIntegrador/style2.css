@@ -7,7 +7,7 @@ html {
     background-size: cover;
     background: #2e2e2e;
   }
- 
+  
   .container {
     width: 350px;
     margin: auto;
@@ -19,38 +19,32 @@ html {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 20px;
-    padding-right: 5%;
   }
-  
-  .selecionar label{
-    text-align: center;
-    color: #e2e2e2;
-    /*padding-left: 50px;*/
-  }
-
-  .selecionar2 label{
-    text-align: center;
-    color: #e2e2e2;
-    /*padding-left: 50px;*/
-  }
-
- 
-  /*.selecionar {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-  }
-
-  .selecionar2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-  }*/
   
   .title {
     text-align: center;
     color: #f68e07;
     font-weight: 600;
+  }
+  
+  .selecionar input {
+    float: left;
+  }
+
+  .selecionar2 input{
+    float: right;
+  }
+
+  .selecionar label{
+    text-align: center;
+    color: #e2e2e2;
+    float: left;
+  }
+
+  .selecionar2 label{
+    text-align: center;
+    color: #e2e2e2;
+    float: right;
   }
   
   .form {
@@ -59,7 +53,7 @@ html {
   
   .form-group {
     position: relative;
-    padding: 50px 0;
+    padding: 20px 0;
     margin: auto;
     max-width: 100%;
   }
@@ -69,7 +63,7 @@ html {
     border: none;
     border-bottom: 1.5px solid #e2e2e2;
     font-size: 18px;
-    padding: 5px 0;
+    padding: 10px 0;
     display: block;
     width: 100%;
   }
@@ -114,11 +108,11 @@ html {
   }
   
 
-  .aces {
+  /*.aces {
     text-align: center;
     color: hsl(138, 85%, 41%);
     font-weight: 600;
-  }
+  }*/
 
   
   .submit:hover {
@@ -126,14 +120,10 @@ html {
     color: #2e2e2e;
   }
   
-  a {
-    text-decoration: none;
+  #cpf, #cnpj{
+    display: none;
   }
-  
-  .row a {
-    color: #f68e07;
-  }
-  
-  a:hover {
-    color: #f68e07;
+
+  div label{
+    color: white;
   }
