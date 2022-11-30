@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function ex1(){
+            var du = [1,2,3,4,5,6,7,8,9,10]
+            console.log(du)
+            var res =[]
+            for(let i = 0;i<=9;i++){
+                if(du[i]%2==0){
+                    res.push(0)
+                }else{
+                    res.push(1)
+                }
+            }
+            console.log(res)
+        }
+        ex1()
+
+        function ex2(vetor){
+            var res=[]
+            for(let i=0;i<=15;i++){
+                if(vetor[i]%2==0){
+                    res.push(vetor[i])
+                }
+            }
+            console.log(res)
+        }
+        ex2([1,2,3,4,5,6,7,8,9,10,1,2,3,4,5])
+
+        function ex3(vetor){
+            res=[]
+            for(let i=0;i<=20;i++){
+                if(vetor[i]==0){
+                    res.push(i)
+                }
+            }
+            console.log(res)
+        }
+        ex3([1,2,3,4,0,8,6,5,0,7,5,43,2,12,3,3,4,5,0,8])
+
+        function ex4(a,b){
+            c=[]
+            for(let i =0;i<=9;i++){
+                c.push(a[i]+b[i])
+            }
+            console.log(c)
+        }
+        ex4([1,2,3,4,5,6,7,8,9,10],[0,2,4,4,8,4,7,8,6,10])
+
+        function ex5(vetor){
+            var maior=-Infinity
+            for(let i=0;i<=9;i++){
+                if(vetor[i]==0){
+                    break
+                }else{
+                    if(vetor[i]>maior){
+                        maior=vetor[i]
+                    }
+                }
+            }
+            console.log(maior)
+        }
+        ex5([1,4,8,2,3,4,0,2,3,400])
+
+        function ex6(vetor){
+            var maior=-Infinity
+            var menor=Infinity
+            for(let i=0;i<=9;i++){
+                if(vetor[i]==0){
+                    break
+                }else{
+                    if(vetor[i]>maior){
+                        maior=vetor[i]
+                    }
+                    if(vetor[i]<menor){
+                        menor=vetor[i]
+                    }
+                }
+            }
+            console.log(vetor,maior,menor)   
+        }
+        ex6([1,4,8,-2,3,4,0,2,3,400])
+
+        function ex7(){
+            res=[10]
+            soma=0
+            for(let i=0;i<=6;i++){
+                res.push(res[i]*2)
+                soma+=res[i]
+            }
+            soma+=res[7]
+            console.log(res,res[7],soma)
+        }
+        ex7()
+    </script>
+    
+</body>
+</html>
